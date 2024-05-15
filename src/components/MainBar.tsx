@@ -6,7 +6,7 @@ const MainBar = () => {
   return (
     <div className="flex flex-col w-full">
       <Header />
-      <div className="flex">
+      <div className="flex flex-wrap">
         <DashView />
         <ProjDetails />
       </div>
