@@ -17,6 +17,11 @@ type Props = {
 
 const SidebarItem = ({ tab }: Props) => {
   const [activeTab, setActiveTab] = useState<number | null>(0);
+
+  const handleTabClick = (id: number) => {
+    setActiveTab(activeTab === id ? null : id);
+  };
+
   return (
     <motion.div
       key={tab.id}
@@ -29,9 +34,7 @@ const SidebarItem = ({ tab }: Props) => {
         className={` flex items-center justify-between cursor-pointer rounded-tl-lg rounded-bl-lg p-3 hover:bg-[#F3FAFC] ${
           activeTab === tab.id && "bg-[#F3FAFC]"
         } transition duration-200 ease-in-out`}
-        onClick={() =>
-          activeTab === tab.id ? setActiveTab(null) : setActiveTab(tab.id)
-        }
+        onClick={() => handleTabClick(tab.id)}
       >
         <span className=" flex items-center justify-center gap-5">
           <div className="text-lg">
