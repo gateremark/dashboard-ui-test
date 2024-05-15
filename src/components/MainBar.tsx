@@ -4,7 +4,7 @@ import ProjDetails from "./ProjDetails";
 
 const MainBar = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <Header />
       <div className="flex">
         <DashView />

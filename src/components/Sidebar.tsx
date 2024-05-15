@@ -9,11 +9,11 @@ import SidebarItem from "./SidebarItem";
 const Sidebar = () => {
   const [activeTab, setActiveTab] = useState<number | null>(0);
   return (
-    <div className="flex flex-col gap-6 w-80 h-screen scrollbar-hidden pb-20">
+    <div className="flex flex-col gap-6 w-80 h-screen shadow">
       <div className="px-8">
         <Logo className="" />
       </div>
-      <div className="grid grid-cols-1 md:px-5">
+      <div className="grid grid-cols-1">
         {sidebarData.map((tab) => (
           <SidebarItem
             key={tab.id}
