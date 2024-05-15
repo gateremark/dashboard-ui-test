@@ -33,6 +33,13 @@ const DashView = () => {
         </p>
       </div>
       <Team />
+      <div className=" mt-6 px-4 pt-6 flex flex-col gap-3 shadow-md bg-white rounded-t-xl h-[101px]">
+        <h2 className="text-xl font-medium">Files</h2>
+        <div className="flex justify-center gap-6">
+          <div className="w-1/2 h-10 border-t-2 border-x-2 rounded-md border-dashed"></div>
+          <div className="w-1/2 h-10 border-t-2 border-x-2 rounded-md border-dashed"></div>
+        </div>
+      </div>
     </div>
   );
 };
