@@ -1,11 +1,11 @@
 import Main from "./sections/Main";
 
 function App() {
-    return (
-        <>
-            <Main />
-        </>
-    );
+  return (
+    <>
+      <Main />
+    </>
+  );
 }
 
 export default App;
