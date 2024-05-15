@@ -1,33 +1,35 @@
 import { IoMdSearch, IoMdNotifications } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
+const alphaCards = [
+  {
+    id: 0,
+    value: "c",
+    color: "text-pink-500",
+    bgColor: "bg-pink-100",
+  },
+  {
+    id: 1,
+    value: "d",
+    color: "text-indigo-800",
+    bgColor: "bg-indigo-100",
+  },
+  {
+    id: 2,
+    value: "a",
+    color: "text-orange-500",
+    bgColor: "bg-orange-100",
+  },
+  {
+    id: 3,
+    value: "+",
+    color: "",
+    bgColor: "",
+  },
+];
+
 const Header = () => {
-  const alphaCards = [
-    {
-      id: 0,
-      value: "c",
-      color: "text-pink-500",
-      bgColor: "bg-pink-100",
-    },
-    {
-      id: 1,
-      value: "d",
-      color: "text-indigo-800",
-      bgColor: "bg-indigo-100",
-    },
-    {
-      id: 2,
-      value: "a",
-      color: "text-orange-500",
-      bgColor: "bg-orange-100",
-    },
-    {
-      id: 3,
-      value: "+",
-      color: "",
-      bgColor: "",
-    },
-  ];
+  
   return (
     <div className="pt-10 pb-4 px-6 w-full shadow-sm z-40">
       <div className="flex items-center justify-between w-full">
