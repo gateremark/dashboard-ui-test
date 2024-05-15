@@ -6,7 +6,7 @@ const titles = ["View all", "Most recent", "Popular"];
 const DashView = () => {
   const [active, setActive] = useState("View all");
   return (
-    <div className="bg-[#F3FAFC] px-6 lg:w-[750px] border-r">
+    <div className="bg-[#F3FAFC] px-6 lg:w-[700px] border-r">
       <h1 className=" text-3xl font-semibold py-8">
         Launch Clever dashboard theme
       </h1>
@@ -24,7 +24,7 @@ const DashView = () => {
         ))}
       </div>
       <div className=" my-6 px-4 py-6 flex flex-col gap-3 shadow-md bg-white rounded-xl">
-        <h2 className="text-xl font-medium">Mission</h2>
+        <h2 className="text-xl font-semibold">Mission</h2>
         <p className=" text-gray-700">
           There are many variations of paasages of Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Cumque quos, inventore nam veritatis
@@ -34,7 +34,7 @@ const DashView = () => {
       </div>
       <Team />
       <div className=" mt-6 px-4 pt-6 flex flex-col gap-3 shadow-md bg-white rounded-t-xl h-[101px]">
-        <h2 className="text-xl font-medium">Files</h2>
+        <h2 className="text-xl font-semibold">Files</h2>
         <div className="flex justify-center gap-6">
           <div className="w-1/2 h-10 border-t-2 border-x-2 rounded-md border-dashed"></div>
           <div className="w-1/2 h-10 border-t-2 border-x-2 rounded-md border-dashed"></div>

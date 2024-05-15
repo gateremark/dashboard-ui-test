@@ -75,7 +75,7 @@ export const teamData = [
   {
     id: 4,
     name: "Eve Doe",
-    role: "Sales",
+    role: "Sales Manager",
     imageUrl: "https://randomuser.me/api/portraits/women/89.jpg",
   },
   {
@@ -87,7 +87,7 @@ export const teamData = [
   {
     id: 6,
     name: "Grace Doe",
-    role: "HR",
+    role: "Technical Lead",
     imageUrl: "https://randomuser.me/api/portraits/women/52.jpg",
   },
 ];
