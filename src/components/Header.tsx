@@ -29,7 +29,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="pt-6 pb-4 px-6 w-full shadow-sm z-40">
+    <div className="pt-10 pb-4 px-6 w-full shadow-sm z-40">
       <div className="flex items-center justify-between w-full">
         <div className="flex gap-3">
           {alphaCards.map((card) => (
