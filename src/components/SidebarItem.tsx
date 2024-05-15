@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaAngleRight } from "react-icons/fa6";
 import { BsBriefcase } from "react-icons/bs";
@@ -12,11 +13,10 @@ type Props = {
     title: string;
     sections: string[];
   };
-  activeTab: number | null;
-  setActiveTab: (id: number | null) => void;
 };
 
-const SidebarItem = ({ tab, activeTab, setActiveTab }: Props) => {
+const SidebarItem = ({ tab }: Props) => {
+  const [activeTab, setActiveTab] = useState<number | null>(0);
   return (
     <motion.div
       key={tab.id}

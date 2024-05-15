@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { sidebarData } from "../constants";
 import { resourcesData } from "../constants";
 import { BsCodeSquare } from "react-icons/bs";
@@ -7,20 +6,14 @@ import Logo from "../assets/logo";
 import SidebarItem from "./SidebarItem";
 
 const Sidebar = () => {
-  const [activeTab, setActiveTab] = useState<number | null>(0);
   return (
-    <div className="flex flex-col gap-6 w-80 h-screen shadow">
+    <div className="flex flex-col gap-6 w-80 border-r pb-6">
       <div className="px-8">
         <Logo className="" />
       </div>
       <div className="grid grid-cols-1">
         {sidebarData.map((tab) => (
-          <SidebarItem
-            key={tab.id}
-            tab={tab}
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-          />
+          <SidebarItem key={tab.id} tab={tab} />
         ))}
       </div>
       <hr />
