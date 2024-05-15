@@ -6,7 +6,7 @@ const titles = ["View all", "Most recent", "Popular"];
 const DashView = () => {
   const [active, setActive] = useState("View all");
   return (
-    <div className="bg-[#F3FAFC] px-6 lg:w-[700px]">
+    <div className="bg-[#F3FAFC] px-6 lg:w-[750px] border-r">
       <h1 className=" text-3xl font-semibold py-8">
         Launch Clever dashboard theme
       </h1>
@@ -29,7 +29,7 @@ const DashView = () => {
           There are many variations of paasages of Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Cumque quos, inventore nam veritatis
           consectetur harum culpa! Sapiente alias nostrum repellendus.
-          Voluptates, reprehenderit!
+          Voluptates, reprehenderit isn't anything hidden in the middle of text.
         </p>
       </div>
       <Team />

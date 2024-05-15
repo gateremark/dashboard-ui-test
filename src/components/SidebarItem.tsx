@@ -26,7 +26,7 @@ const SidebarItem = ({ tab }: Props) => {
       transition={{ duration: 0.5 }}
     >
       <div
-        className={` flex items-center justify-between cursor-pointer rounded-lg p-3 hover:bg-[#F3FAFC] ${
+        className={` flex items-center justify-between cursor-pointer rounded-tl-lg rounded-bl-lg p-3 hover:bg-[#F3FAFC] ${
           activeTab === tab.id && "bg-[#F3FAFC]"
         } transition duration-200 ease-in-out`}
         onClick={() =>

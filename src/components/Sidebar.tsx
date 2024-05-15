@@ -7,7 +7,7 @@ import SidebarItem from "./SidebarItem";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col gap-6 w-80 border-r pb-6">
+    <div className="flex flex-col gap-6 w-[300px] border-r pb-6">
       <div className="px-8">
         <Logo className="" />
       </div>
