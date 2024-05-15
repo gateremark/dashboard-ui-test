@@ -1,5 +1,5 @@
 const DashView = () => {
-    return <div>DashView</div>;
+    return <div className="bg-[#F3FAFC]">DashView</div>;
 };
 
 export default DashView;
