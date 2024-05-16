@@ -27,7 +27,7 @@ const ProjDetails = () => {
         repudiandae corrupti sapiente repellat veniam! Velit.
       </p>
       <h4 className="text-gray-700">Tags</h4>
-      <div className="flex gap-2 my-4 flex-wrap">
+      <div className="flex gap-4 my-4 flex-wrap">
         {tags.map((tag) => (
           <span
             key={tag}
