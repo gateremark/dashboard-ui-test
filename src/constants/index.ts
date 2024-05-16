@@ -92,8 +92,6 @@ export const teamData = [
   },
 ];
 
-export const tags = ["Project", "SpaceX", "Launch", "Falcon", "Multiplanetary"];
-
 export const timeline = [
   {
     id: 0,

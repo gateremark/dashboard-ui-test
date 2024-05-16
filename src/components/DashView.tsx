@@ -6,7 +6,7 @@ const titles = ["View all", "Most recent", "Popular"];
 const DashView = () => {
   const [active, setActive] = useState("View all");
   return (
-    <div className="bg-[#F3FAFC] px-6 lg:w-[700px] border-r">
+    <div className="bg-[#F3FAFC] px-6 max-w-[700px] border-r">
       <h1 className=" text-3xl font-semibold py-8">
         Launch Clever dashboard theme
       </h1>
