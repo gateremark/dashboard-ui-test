@@ -19,6 +19,12 @@
   opacity: 1;
 }
 
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+  border-radius: 10px;
+  opacity: 1;
+}
+
 /* .scrollbar-hidden {
   overflow: hidden;
 }

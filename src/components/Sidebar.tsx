@@ -14,7 +14,7 @@ type Props = {
 const Sidebar = ({ isOpen, setIsOpen }: Props) => {
   return (
     <div
-      className={`flex flex-col gap-6 sm:w-[300px] w-full border-r pb-10 px-6 sm:px-0
+      className={`flex flex-col gap-6 sm:w-[300px] w-full border-r pb-10 px-6 sm:px-0 custom-scroll
     ${
       isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
     } transition duration-200 ease-in-out h-full bg-white fixed md:static top-0 left-0 z-50 overflow-auto 
@@ -39,13 +39,13 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
         <h1 className="text-sm font-medium px-7 pb-4 text-gray-500 uppercase">
           Resources
         </h1>
-        <div className="flex flex-col gap-5 px-8 w-full">
+        <div className="flex flex-col gap-5 px-3 w-full">
           {resourcesData.map((resource) => (
             <div className="flex gap-5 items-center cursor-pointer w-full hover:text-slate-900 hover:font-medium transition duration-200 ease-in-out relative">
               {resource.title === "Documentation" ? (
-                <BsCodeSquare className="text-xl" />
+                <BsCodeSquare className="text-lg" />
               ) : (
-                <SlNotebook className="text-xl" />
+                <SlNotebook className="text-lg" />
               )}
               <a
                 key={resource.id}
@@ -56,7 +56,7 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
                 {resource.title}
               </a>
               {resource.new && (
-                <span className="text-xs flex items-center justify-center font-semibold text-teal-600 lowercase absolute md:-right-7 left-40 bg-teal-200 px-1.5 py-1 rounded-lg">
+                <span className="text-xs flex items-center w-fit justify-center font-semibold text-teal-600 lowercase absolute left-[180px] bg-teal-200 px-1.5 py-1 rounded-lg">
                   New
                 </span>
               )}

@@ -31,7 +31,7 @@ const alphaCards = [
 const Header = () => {
   return (
     <div className="pt-10 pb-4 px-6 w-full shadow-sm z-40">
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center md:justify-between justify-end w-full">
         <div className="md:flex gap-3 hidden">
           {alphaCards.map((card) => (
             <div
@@ -56,7 +56,7 @@ const Header = () => {
               type="text"
               name="search"
               placeholder="Search"
-              className=" font-medium text-lg p-2 rounded-xl w-1/2 md:w-60 focus:outline-slate-600"
+              className=" font-medium text-lg p-2 rounded-xl w-[200px] md:w-60 focus:outline-slate-600"
             />
             <IoMdNotifications className="text-2xl" />
           </div>

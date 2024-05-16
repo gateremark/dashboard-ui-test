@@ -4,11 +4,11 @@ import MainBar from "../components/MainBar";
 import { IoMenu } from "react-icons/io5";
 
 export default function Main() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <main className="max-w-7xl mx-auto text-slate-900 h-full flex relative">
       {!isOpen && (
-        <div className="absolute top-2 z-50 md:hidden">
+        <div className="absolute top-2 left-2 z-50 md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="">
             <IoMenu className=" text-3xl" />
           </button>
