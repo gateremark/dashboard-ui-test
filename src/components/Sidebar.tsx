@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
     <div
       className={`flex flex-col gap-6 sm:w-[300px] w-full border-r pb-6 
     ${
-      isOpen ? "translate-x-0" : "-translate-x-full"
+      isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
     } transition duration-200 ease-in-out h-full bg-white fixed md:static top-0 left-0 z-50 overflow-auto 
     `}
     >
@@ -35,13 +35,13 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
         ))}
       </div>
       <hr />
-      <div className="">
+      <div className="w-full">
         <h1 className="text-sm font-medium px-7 pb-4 text-gray-500 uppercase">
           Resources
         </h1>
-        <div className="flex flex-col gap-5 px-8">
+        <div className="flex flex-col gap-5 px-8 w-full">
           {resourcesData.map((resource) => (
-            <div className="flex gap-5 items-center cursor-pointer hover:text-slate-900 hover:font-medium transition duration-200 ease-in-out relative">
+            <div className="flex gap-5 items-center cursor-pointer w-full hover:text-slate-900 hover:font-medium transition duration-200 ease-in-out relative">
               {resource.title === "Documentation" ? (
                 <BsCodeSquare className="text-xl" />
               ) : (
@@ -56,7 +56,7 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
                 {resource.title}
               </a>
               {resource.new && (
-                <span className="text-xs font-semibold text-teal-600 lowercase absolute right-0 bg-teal-200 px-1.5 py-1 rounded-lg">
+                <span className="text-xs flex items-center justify-center font-semibold text-teal-600 lowercase absolute md:-right-7 left-40 bg-teal-200 px-1.5 py-1 rounded-lg">
                   New
                 </span>
               )}
