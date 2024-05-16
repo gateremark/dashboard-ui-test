@@ -16,11 +16,11 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
     <div
       className={`flex flex-col gap-6 sm:w-[300px] w-full border-r pb-10 px-6 sm:px-0 custom-scroll
     ${
-      isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
-    } transition duration-200 ease-in-out h-full bg-white fixed md:static top-0 left-0 z-50 overflow-auto 
+      isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+    } transition duration-200 ease-in-out h-full bg-white fixed lg:static top-0 left-0 z-50 overflow-auto 
     `}
     >
-      <div className="flex justify-end pr-3 pt-2 md:hidden">
+      <div className="flex justify-end pr-3 pt-2 lg:hidden">
         <button onClick={() => setIsOpen && setIsOpen(false)}>
           <IoClose className=" text-3xl" />
         </button>

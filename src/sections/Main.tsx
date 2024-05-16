@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <main className="max-w-7xl mx-auto text-slate-900 h-full flex relative">
       {!isOpen && (
-        <div className="absolute top-2 left-2 z-50 md:hidden">
+        <div className="absolute top-2 left-2 z-50 lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="">
             <IoMenu className=" text-3xl" />
           </button>
